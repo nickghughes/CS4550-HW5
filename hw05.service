@@ -1,0 +1,18 @@
+[Unit]
+Description=HW05 Server-Side Game Logic
+
+[Service]
+Type=simple
+User=practicefive
+Group=practicefive
+Restart=on-failure
+Environment=MIX_ENV=prod
+Environment=PORT=4791
+Environment=PROD=true
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/practicefive/CS4550-HW5
+ExecStart=/bin/bash /home/practicefive/CS4550-HW5/start.sh
+
+[Install]
+WantedBy=multi-user.target
