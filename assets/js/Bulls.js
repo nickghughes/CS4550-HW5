@@ -4,9 +4,11 @@ import { uniqDigits } from './util';
 import { ch_join, ch_push_guess, ch_push_reset } from './socket'
 
 export function Bulls() {
+  // Rely on the server for state, but also keep track of current input
   const [guess, setGuess] = useState("");
   const [state, setState] = useState();
 
+  // Join the server
   useEffect(() => {
     ch_join(setState);
   });
@@ -78,6 +80,8 @@ export function Bulls() {
     return <p>&nbsp;</p>;
   }
 
+  // Wait for the connection to the server to be established, then render the game
+  // We wait because the server dictates how many guesses there are, and how long the secret number is.
   return (
     <div className="bulls-and-cows">
       {

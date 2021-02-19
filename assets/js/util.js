@@ -1,3 +1,6 @@
+// With the server doing most of the state management, this is the only 
+//  utility function we need.
+
 // Given a string, return the unique digits in it
 // If there are duplicates, keep the first instance only
 export function uniqDigits(str) {

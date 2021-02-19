@@ -1,0 +1,27 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Nick Hughes
+
+2. What hostname did you deploy to?
+grumdog.com (hw05.grumdog.com for this assignment)
+
+3. Which parts of this assignment did you have trouble with, if any?
+Figuring out the build setup with port, secret config, etc.
+
+4. What part of your application state is on the server?
+Everything but the guess currently being typed.
+
+5. What part of your application state, if any, is in the browser?
+Contents of the input text box (current guess).
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
