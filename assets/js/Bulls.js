@@ -27,7 +27,7 @@ export function Bulls() {
 
   // Make a guess if enter is pressed, and backspace when backspace is pressed
   function keypress(ev) {
-    if (ev.key == "Enter" && guess.length === 4) {
+    if (ev.key == "Enter" && guess.length === state["secret_len"]) {
       makeGuess();
     }
     if (ev.key == "Backspace" && guess.length > 0) {
