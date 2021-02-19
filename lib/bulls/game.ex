@@ -1,7 +1,7 @@
 defmodule Bulls.Game do
   # Create a new state
   def new do
-    secret_len = 5
+    secret_len = 4
     %{
       secret: random_secret(secret_len),
       num_guesses: 8,
